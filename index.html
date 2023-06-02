@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="spacex.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>SpaceX Project by Patryk Sejler</title>
+
+    <style>
+      #myDiv {
+        display: none;
+      }
+      footer{
+        display: none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="myDiv">
+    <nav>
+      <script>
+        function showDiv() {
+          document.getElementById('form').style.display = "block";
+        }
+          
+      </script>
+      <div class="nav-bar">
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#form" onclick="showDiv()">Space</a><a style="color:gray; font-size: 30px; padding-left: 3px;">X</a></span>
+
+          <div class="menu">
+              <div class="logo-toggle">
+                  <span class="logo"><a href="#form" onclick="showDiv()">Space</a><a style="color:gray; font-size: 30px; padding-left: 3px;">X</a></span>
+                  <i class='bx bx-x siderbarClose'></i>
+              </div>
+
+              <ul class="nav-links">
+                  <li><a href="#">Główna</a></li>
+                  <li><a href="#">O nas</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Usługi</a></li>
+                  <li><a href="#">Kontakt</a></li>
+              </ul>
+              
+          </div>
+
+          <div class="darkLight-searchBox">
+              <div class="dark-light">
+              </div>
+              <div class="searchBox">
+                 <div class="searchToggle">
+                  <i class='bx bx-x cancel'></i>
+                  <i class='bx bx-search search'></i>
+                 </div>
+
+                  <div class="search-field">
+                      <input type="text" placeholder="Wyszukaj...">
+                      <i class='bx bx-search'></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+    <header>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video id="reveal-video" aria-hidden="true" autoplay="" loop="" muted="" width="100%" height="100%" preload="auto" autobuffer="true">
+              <source type="video/mp4" src="rocket/WebsiteStarshipStack_Anim_Render_Desktop_6.mp4">
+              <source type="video/webm" src="rocket/WebsiteStarshipStack_Anim_Render_Desktop_5.webm">
+            </video>
+          </div>
+          <div class="swiper-slide" >
+            <img src="rocket/WebsiteStarship_Render_Desktop.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="rocket/WebsiteSuperHeavy_Render_Desktop.jpg">
+          </div>
+          <div class="swiper-slide">
+            <img src="rocket/Raptor_Desktop.jpg">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-caret-up"></i>
+          <span>Poprz</span>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-caret-up"></i>
+          <span>Nast</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scriptee.js"></script>
+    </header>
+
+    <section class="main">
+      <div class="section__container header__container">
+        <div class="header__image">
+          <video id="rakieta_header" aria-hidden="true" autoplay="" loop="" muted="" width="100%" height="100%" preload="auto" autobuffer="true">
+            <source type="video/mp4" src="img/TankerDock_16x9.mp4">
+            <source type="video/webm" src="img/TankerDock_16x9.mp4">
+          </video>
+        </div>
+        <div class="header__content">
+          <div>
+            <h1>Zwiedź Kosmos<br/> z nami! 🪐</h1>
+            <p class="section__subtitle">
+              “You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.” - Patryk Sejler
+            </p>
+            <div class="action__btns">
+              <a href="#form"><button class="btn">Zapisz Się!</button></a>
+              <div class="story">
+                <div class="video__image">
+                  <img src="img/spacex.png" alt="story"/>
+                  <span><i class="ri-play-fill" style="color: black; border: black 2px solid;"></i></span>
+                </div>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">Powiadomienia o nowych zmianach!</h2>
+          <p class="section__subtitle">
+            Śledź nasz każdy krok!
+          </p>
+        </div>
+        <div class="subscribe__form">
+          <form>
+            <input type="email" placeholder="Twój email" />
+            <button class="btn" type="submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="form_container" id="form" style="display:none;">
+      <div class="container">
+      <header>Formularz</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Pełne Imię i Nazwisko</label>
+          <input type="text" placeholder="Wprowadź Imię i Nazwisko" required id="fullname-input" />
+        </div>
+
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Wprowadź email" required id="email-input" />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Numer Telefonu</label>
+            <input type="text" placeholder="Wprowadź numer telefonu" maxlength="9" required id="phone-input"/>
+            <small id="small" style="display:none">Numer musi zawierać 9 znaków!</small>
+          </div>          
+          <div class="input-box">
+            <label>Data Urodzenia</label>
+            <input type="date" placeholder="Wprowadź date urodzenia" required oninput="sprawdzDateUrodzenia()"/>
+            <small id="smal">Podaj poprawna date!</small>
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Płeć</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender"/>
+              <label for="check-male">Mężczyzna</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Kobieta</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" checked/>
+              <label for="check-other">nieznana</label>
+            </div>
+          </div>
+        </div>       
+        <div class="input-box address">
+          <label>Adres</label>
+          <input type="text" placeholder="Ulica Główna" required id="ulicaGlowna" oninput="sprawdzNumerUlicy()"/>
+          <input type="text" placeholder="Ulica dodatkowa" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Kraj</option>
+                <option>Ameryka</option>
+                <option>Japonia</option>
+                <option>Indie</option>
+                <option>Polska</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Miasto" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Województwo" required />
+            <input type="text" placeholder="Kod Pocztowy" required id="kodPocztowy" maxlength="6" oninput="formatujKodPocztowy()"/>
+          </div>
+        </div>
+        <div id="Doswiadczenie-box">
+          <legend>Doswiadczenie:</legend>
+      
+          <div class="input-box">
+            <input type="checkbox" id="C++" name="C++" checked style="width:25px">
+            <label for="C++">C++</label>
+          </div>
+          <div class="input-box">
+            <input type="checkbox" id="Python" name="Python" checked style="width:25px">
+            <label for="Python">Python</label>
+          </div>
+          <div class="input-box">
+            <input type="checkbox" id="JS" name="JS" style="width:25px">
+            <label for="JS">JS</label>
+          </div>
+        </div>
+      
+        <div id="price-box">
+          <div class="input-box">
+            <label>Ile jesteś w stanie zapłacić?</label>
+            <input type="range" min="0" max="5000" step="1" value="2300" id="payment-range" />
+            <span id="payment-value">2300 zł</span>
+          </div>
+        </div>
+        <div class="course-date">
+          <div class="input-box">
+            <label>Wybierz zakres dat kursu:</label>
+            <input type="date" id="course-start-date-input">
+            <input type="date" id="course-end-date-input">
+        </div>
+        </div>
+        
+        <button>Submit</button>
+      </form>
+      <script>
+        const rangeInput = document.getElementById('payment-range');
+        const valueSpan = document.getElementById('payment-value');
+      
+        rangeInput.addEventListener('input', function() {
+          valueSpan.textContent = rangeInput.value + " zł";
+        });
+      </script>
+        <script>
+          const startDateInput = document.getElementById('course-start-date-input');
+          const endDateInput = document.getElementById('course-end-date-input');
+        
+          startDateInput.addEventListener('change', function() {
+            const selectedStartDate = new Date(startDateInput.value);
+            const selectedEndDate = new Date(endDateInput.value);
+        
+            const minEndDate = new Date(selectedStartDate);
+            minEndDate.setDate(selectedStartDate.getDate() + 7);
+            
+            if (selectedEndDate < minEndDate) {
+              endDateInput.value = formatDate(minEndDate);
+            }
+          });
+        
+          endDateInput.addEventListener('change', function() {
+            const selectedStartDate = new Date(startDateInput.value);
+            const selectedEndDate = new Date(endDateInput.value);
+        
+            const minEndDate = new Date(selectedStartDate);
+            minEndDate.setDate(selectedStartDate.getDate() + 7);
+        
+            if (selectedEndDate < minEndDate) {
+              endDateInput.value = formatDate(minEndDate);
+            }
+          });
+        
+          function formatDate(date) {
+            const year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            if (month < 10) {
+              month = '0' + month;
+            }
+            let day = date.getDate();
+            if (day < 10) {
+              day = '0' + day;
+            }
+            return `${year}-${month}-${day}`;
+          }
+        </script>
+        
+        <script>
+          const phoneInput = document.getElementById('phone-input');
+          const not = document.getElementById('small');
+          phoneInput.addEventListener('input', function() {
+            const inputValue = phoneInput.value.replace(/\D/g, '');
+            
+            const formattedValue = formatPhoneNumber(inputValue);
+            phoneInput.value = formattedValue;
+            
+            if (inputValue.length !== 9) {
+              phoneInput.style.borderColor = 'red';
+              not.style.display = 'block';
+              not.style.color = 'red';
+            } else {
+              phoneInput.style.borderColor = '';
+              not.style.display = 'none'
+            }
+          });
+
+          function formatPhoneNumber(value) {
+            const match = value.match(/^(\d{3})(\d{3})(\d{3})$/);
+            if (match) {
+              return match[1] + '-' + match[2] + '-' + match[3];
+            }
+            return value;
+          }
+        </script>
+        
+        <script>
+          const emailInput = document.getElementById('email-input');
+        
+          emailInput.addEventListener('input', function() {
+            const email = emailInput.value;
+            const isValidEmail = validateEmail(email);
+        
+            if (isValidEmail) {
+              emailInput.classList.remove('invalid');
+            } else {
+              emailInput.classList.add('invalid');
+            }
+          });
+        
+          function validateEmail(email) {
+            const emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailCheck.test(email);
+          }
+        </script>
+        <script>
+          const fullnameInput = document.getElementById('fullname-input');
+        
+          fullnameInput.addEventListener('input', function() {
+            const fullname = fullnameInput.value;
+            const filteredFullname = filterNonAlphabetCharacters(fullname);
+            fullnameInput.value = filteredFullname;
+          });
+        
+          function filterNonAlphabetCharacters(fullname) {
+            return fullname.replace(/[^a-zA-Z ]/g, '');
+          }
+        </script>
+        <script>
+          function formatujKodPocztowy() {
+            var kodPocztowy = document.getElementById('kodPocztowy').value;
+            kodPocztowy = kodPocztowy.replace(/\D/g, '');
+            kodPocztowy = kodPocztowy.replace(/^(\d{2})(\d{3})$/, '$1-$2');
+            document.getElementById('kodPocztowy').value = kodPocztowy;
+          }
+        </script>
+        <script>
+          function sprawdzDateUrodzenia() {
+            var dataUrodzenia = document.getElementById('dataUrodz').value;
+            var rokUrodzenia = new Date(dataUrodzenia).getFullYear();
+            var dzisiejszaData = new Date();
+            var rokTeraz = dzisiejszaData.getFullYear();
+            var smalElement = document.getElementById('smal');
+
+            // Sprawdzanie, czy podana data jest realna
+            if (isNaN(rokUrodzenia) || rokUrodzenia > rokTeraz) {
+              document.getElementById('smal').value = 'Wprowadz poprawna date!'
+              document.getElementById('dataUrodz').value = '';
+              smalElement.style.display = 'block';
+              return;
+            }
+
+            var wiek = rokTeraz - rokUrodzenia;
+            if (wiek < 18) {
+              document.getElementById('smal').value = 'Jestes niepelnoletni gagatku'
+            } else {
+              document.getElementById('smal').value = 'Poprawna data!'
+            }
+          }
+        </script>
+        <script>
+          function sprawdzNumerUlicy() {
+            var ulicaGlowna = document.getElementById('ulicaGlowna').value;
+            
+            var numerPattern = /\d+/;
+            var zawieraNumer = numerPattern.test(ulicaGlowna);
+            
+            if (zawieraNumer) {
+              ulicaGlowna.style.border = "2px solid red"
+            } else {
+              ulicaGlowna.style.border = "2px solid green"
+            }
+          }
+          </script>
+        <style>
+          .invalid {
+            border: 2px solid red;
+          }
+        </style>
+
+
+    </section>
+    <footer class="footer" id="f">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Space<span>X</span></h3>
+          <p>
+            Przyszłość to my! Zmień świat na lepsze z nami.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Pomoc</h4>
+          <p>FAQs</p>
+          <p>Polityka prywatności</p>
+          <p>Kontakt</p>
+        </div>
+        <div class="footer__col">
+          <h4>Adres</h4>
+          <p>
+            <span>Adres:</span> 280 Wilson Street, Cima, California, 92323,
+            United States
+          </p>
+          <p><span>Email:</span> info@spacex.com</p>
+          <p><span>Telefon:</span> +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 SpaceX. Wszystkie prawa zastrzeżone.
+      </div>
+    </div>
+    </footer>
+  </div>
+    <script>
+      function hideAndShowDiv() {
+        var div = document.getElementById("myDiv");
+        var div1 = document.getElementById("f");
+        div.style.display = "none";
+        div1.style.display = "none";
+        setTimeout(function() {
+          div.style.display = "block";
+          div1.style.display = "block";
+        }, 4000);
+      }
+      window.onload = hideAndShowDiv;
+    </script>
+    
+    <section>
+      <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <g class="letter_x">
+            <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z" style="stroke-width:5px"/>
+            <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z" style="stroke-width:5px"/>
+          </g>
+          <g class="letter_swoosh">
+            <path class="fill-white" d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z" style="stroke-width:5px"/>
+          </g>
+        </svg>
+    
+    
+        <div class="name-container">
+            <div class="logo-name">My jesteśmy Przyszłością!</div>
+        </div>
+    </div>
+      <script src="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Loader.js"></script>
+    </section>
+  </body>
+</html>
